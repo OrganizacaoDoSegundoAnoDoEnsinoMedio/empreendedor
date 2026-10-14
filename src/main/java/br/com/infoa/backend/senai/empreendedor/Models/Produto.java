@@ -42,52 +42,55 @@ public class Produto {
     public Produto() {
     }
 
-    public Produto(Long id, String nome, LocalDate dataFabricacao, Double preco) {
+    public Produto(Long id, String nome, LocalDate dataFabricacao, Double preco, List<Empreendedor> empreendedores) {
         this.id = id;
         this.nome = nome;
         this.dataFabricacao = dataFabricacao;
         this.preco = preco;
+        this.empreendedores = empreendedores;
     }
 
     public Long getId() {
         return id;
     }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public LocalDate getDataFabricacao() {
-        return dataFabricacao;
-    }
-
-    public Double getPreco() {
-        return preco;
-    }
-
-    public List<Empreendedor> getEmpreendedores() {
-        return empreendedores;
-    }
-
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
     }
 
+    public LocalDate getDataFabricacao() {
+        return dataFabricacao;
+    }
+
     public void setDataFabricacao(LocalDate dataFabricacao) {
         this.dataFabricacao = dataFabricacao;
+    }
+
+    public Double getPreco() {
+        return preco;
     }
 
     public void setPreco(Double preco) {
         this.preco = preco;
     }
 
+    public List<Empreendedor> getEmpreendedores() {
+        return empreendedores;
+    }
+
     public void setEmpreendedores(List<Empreendedor> empreendedores) {
         this.empreendedores = empreendedores;
     }
+
+    
 
     
 
